@@ -13,7 +13,7 @@ class AlunoController{
     salvar = (req, res)=>{
         const situacao = 0//1 = aprovado, 0 = reprovado
         if (res.body.nota >= 7) {
-            const situacao = 1
+            situacao = 1
         }
          
         let aluno = {
